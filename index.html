@@ -477,12 +477,12 @@
         <p>© ২০২৬ স্মার্ট ভূমি সেবা | সর্বস্বত্ব সংরক্ষিত</p>
     </footer>
 
-    <!-- Service & WhatsApp Selection Script -->
+    <!-- Service Selection & WhatsApp Script -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            let selectedServices = [];
+        window.addEventListener("DOMContentLoaded", function() {
+            var selectedServices = [];
 
-            const serviceCards = document.querySelectorAll('.service-card');
-            serviceCards.forEach(card => {
+            var serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach(function(card) {
                 card.addEventListener('click', function() {
-                    const serviceName = t
+                    var serviceName = 
